@@ -1,0 +1,308 @@
+/* ---------------------- General ---------------------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fa;
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+
+/* ---------------------- Buttons ---------------------- */
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: all 0.2s;
+}
+
+.btn-success {
+  background-color: #3498db;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+/* ---------------------- Cards ---------------------- */
+.card {
+  background-color: white;
+  padding: 20px 300px; /* 20px top & bottom, 30px left & right */
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+/* ---------------------- Headers ---------------------- */
+h2 {
+  margin-bottom: 15px;
+  color: #34495e;
+  position: center;
+
+}
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* ---------------------- Alerts / Messages ---------------------- */
+.alert {
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.alert-error {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.alert-success {
+  background-color: #2ecc71;
+  color: white;
+}
+
+/* ---------------------- Misc ---------------------- */
+.mb-2 { margin-bottom: 10px; }
+.mb-3 { margin-bottom: 15px; }
+.me-2 { margin-right: 10px; }
+.me-3 { margin-right: 15px; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c3e50;
+  padding: 10px 20px;
+  position: relative;
+  color: white;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.navbar-user {
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Cards */
+.form-card,
+.table-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.form-card:hover,
+.table-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+/* Container for the whole Classes page */
+.classes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Form card styling */
+.form-card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-card h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-card input,
+.form-card select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  border-color: black;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+/* Table card styling */
+.list-card {
+  width: 100%;
+  max-width: 900px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow-x: auto;
+  margin-top: 20px; 
+
+}
+
+.list-card h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+}
+
+.list-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-card th,
+.list-card td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.list-card th {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.list-card tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.list-card tr:hover {
+  background-color: #e0f0ff;
+}
+
+/* Center login and register forms */
+main {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  min-height: 100vh;       
+  background-color: #f5f5f5;
+  padding: 14px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form elements */
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card input,
+.card select,
+.card button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.card button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #45a049;
+}
+
+/* Heading */
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
